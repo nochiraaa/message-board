@@ -1,12 +1,19 @@
-<h1>メッセージ一覧</h1>
-<%= @messages.each do |m| %>
-名前：
-<%= m.name %>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        メッセージ一覧
+    </div>
+    <div class="panel-body">
+        <%= @messages.each do |m| %>
+        <span class="label label-info">
+        <%= m.name %>    
+        </span>
+        <%= m.body %>
+        <br>
+        <% end %>
+    </div>
+</div>
 
-内容：
-<%= m.body %>
-<br>
-<% end %>
+
 
 <%= form_for(Message.new) do |f| %>
 
