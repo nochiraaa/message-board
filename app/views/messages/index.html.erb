@@ -11,6 +11,9 @@
                 <div class="textarea-content">
                 <%= m.body %>
                 </div>
+                <div class="edit-btn">
+                    <%= link_to "edit", edit_message_path(m) %>
+                </div>
             </div>
         <% end %>
     </div>
