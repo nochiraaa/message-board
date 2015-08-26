@@ -3,28 +3,26 @@
         メッセージ一覧
     </div>
     <div class="panel-body">
-        <%= @messages.each do |m| %>
-        <span class="label label-info">
-        <%= m.name %>    
-        </span>
-        <%= m.body %>
-        <br>
+        <% @messages.each do |m| %>
+            <div class="row">
+                <div class="label label-info name-content">
+                <%= m.name %>    
+                </div>
+                <div class="textarea-content">
+                <%= m.body %>
+                </div>
+            </div>
         <% end %>
     </div>
 </div>
-
-
-
 <%= form_for(Message.new) do |f| %>
-
-名前：
-
-<%= f.text_field :name %>
-
-内容：
-
-<%= f.text_field :body %>
-
-<%= f.submit %>
-
+    <div>
+    <label>名前：</label>
+    <%= f.text_field :name %>
+    </div>
+    <div>
+    <label>内容：</label>
+    <%= f.text_area :body, :size => "20x10" %>
+    </div>
+    <%= f.submit %>
 <% end %>

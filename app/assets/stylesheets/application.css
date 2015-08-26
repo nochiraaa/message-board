@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+
+.name-content{
+    width: 10%;
+    min-height:15px;
+    float: left;
+    margin: 0 10% 10px 10%;
+    white-space: normal !important;
+}
+
+.textarea-content {
+    width: 50%;
+    float: left;
+    margin: 0 10% 10px 10%;
+    word-wrap: break-word;
+}
+
+form input {
+    display: block;
+}
+form textarea {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+}
+
+form div {
+    margin: 0 auto 10px auto;
+}
+
+@media(max-width:767px) {
+    .name-content{
+        width: 20%;
+        min-height:15px;
+        float: left;
+        margin: 0 10% 10px 5%;
+        white-space: normal !important;
+    }
+    
+    .textarea-content {
+        width: 50%;
+        float: left;
+        margin: 0 5% 10px 10%;
+        word-wrap: break-word;
+    }
+
+}
