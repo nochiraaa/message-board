@@ -15,7 +15,7 @@
                     <%= link_to "edit", edit_message_path(m) %>
                 </div>
                 <div class="destroy-btn">
-                    <%= link_to "destroy", m, method: :delete, data: {confirm: "#{m.name}の#{m.body}を削除してもよろしいですか？" } %>
+                    <%= link_to "destroy", m, method: :delete, data: {confirm: "#{m.name}(#{m.age})のメッセージを削除してもよろしいですか？" } %>
                 </div>
             </div>
         <% end %>
