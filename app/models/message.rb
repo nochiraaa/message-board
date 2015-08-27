@@ -5,3 +5,4 @@ class Message < ActiveRecord::Base
     
     validates :age, numericality: {only_integer: true, greater_than_or_equal_to: 0}, length: {minimum:1, maximum:3}, presence: true
 end
+
