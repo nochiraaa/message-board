@@ -6,13 +6,10 @@
         <% @messages.each do |m| %>
             <div class="row">
                 <div class="label label-info name-content">
-                <%= m.name %>    
+                <%= m.name %>(<%= m.age %>)    
                 </div>
                 <div class="textarea-content">
                 <%= m.body %>
-                </div>
-                <div class="age-content">
-                <%= m.age %>
                 </div>
                 <div class="edit-btn">
                     <%= link_to "edit", edit_message_path(m) %>
