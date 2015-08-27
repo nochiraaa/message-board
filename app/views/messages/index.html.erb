@@ -11,10 +11,8 @@
                 <div class="textarea-content">
                 <%= m.body %>
                 </div>
-                <div class="edit-btn">
+                <div class="edit-destroy-wrapper">
                     <%= link_to "edit", edit_message_path(m) %>
-                </div>
-                <div class="destroy-btn">
                     <%= link_to "destroy", m, method: :delete, data: {confirm: "#{m.name}の#{m.body}を削除してもよろしいですか？" } %>
                 </div>
             </div>

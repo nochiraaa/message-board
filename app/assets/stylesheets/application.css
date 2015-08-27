@@ -18,15 +18,27 @@
     width: 10%;
     min-height:15px;
     float: left;
-    margin: 0 10% 10px 10%;
+    margin: 0 5% 10px 10%;
     white-space: normal !important;
 }
 
 .textarea-content {
-    width: 50%;
+    width: 40%;
     float: left;
-    margin: 0 10% 10px 10%;
+    margin: 0 5% 10px 5%;
     word-wrap: break-word;
+}
+
+.edit-btn {
+    width: 5%;
+    margin-right:5%;
+    float: left;
+}
+
+.destroy-btn {
+    width: 5%;
+    margin-right:5%;
+    float: left;
 }
 
 form input {
@@ -47,14 +59,14 @@ form div {
         width: 20%;
         min-height:15px;
         float: left;
-        margin: 0 10% 10px 5%;
+        margin: 0 5% 10px 5%;
         white-space: normal !important;
     }
     
     .textarea-content {
-        width: 50%;
+        width: 40%;
         float: left;
-        margin: 0 5% 10px 10%;
+        margin: 0 5% 10px 5%;
         word-wrap: break-word;
     }
 
